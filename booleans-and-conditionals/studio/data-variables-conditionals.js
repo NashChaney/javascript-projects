@@ -25,9 +25,7 @@ if (astronautCount<=7){
                             if (fuelLevel === 100){
                                 if (weatherStatus === "clear"){
                                     preparedForLiftOff = true;
-                                    if (preparedForLiftOff === true){
-                                        console.log("--------")
-                                    }
+                                   
 
                                     }
                                 }
@@ -35,11 +33,23 @@ if (astronautCount<=7){
                         }
                     }
                 }
-            if (preparedForLiftOff === true){
-                console.log(----------"")
-                console.log("Date:" +date)
-
-            }
+                if (preparedForLiftOff === true){
+                    console.log("--------");
+                    console.log("All systems are a go! Initiating space shuttle launch sequence.");
+                    console.log("Date: " + date);
+                    console.log("Time: " + time);
+                    console.log("Astronaut Count: " + astronautCount);
+                    console.log("Crew Mass: " + crewMassKg + " Kg");
+                    console.log("Fuel Mass: " + fuelMassKg + "Kg");
+                    console.log("Shuttle Mass: " + " Kg");
+                    console.log("Total Mass: " + totalMassKg + " Kg");
+                    console.log("Weather Status: " + weatherStatus);
+                    console.log("--------");
+                    console.log("Have a safe trip, astronauts!");
+                } else {
+                    console.log("System error. Shuttle not cleared for liftoff.");
+                }
+            
  
 // add logic below to verify all astronauts are ready
 
