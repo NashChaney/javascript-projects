@@ -36,7 +36,7 @@ function reverseCharacters(parameter) {
   if (typeof parameter === 'string') {
     return parameter.split("").reverse().join("");
   } else if (typeof parameter === 'number') {
-    const reversedString = parameter.toString().split("").reverse().join("");
+    reversedString = parameter.toString().split("").reverse().join("");
     return Number(reversedString);
   } 
 }
